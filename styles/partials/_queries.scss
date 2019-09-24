@@ -1,0 +1,57 @@
+// @media screen and (max-width: 940px) {
+
+//     // GENERAL STYLES
+
+//     .wrapper {
+//         padding: 2rem;
+//     }
+
+//     body {
+//         font-size: 1.6rem;
+        
+//     }
+
+//     .logo {
+//         font-size: 3rem; 
+//     }
+
+//     // HEADER STYLES
+
+//     header {
+//         background-position: right bottom; 
+//         h1 {
+//             font-size: 4rem;
+//             max-width: 100%; 
+//         }
+//     }
+
+//     h2 {
+//         font-size: 2rem;
+//     }
+
+//     .mainContainer { 
+//         display: flex;
+//         flex-direction: column; 
+//         .questionContainer,  
+//         .answerContainer {
+//             width: 100%; 
+//             padding: 2rem; 
+//         }
+//     }
+
+//     .answerContainer { 
+//         font-size: 3rem;
+//     }
+
+//     // FORM STYLES 
+
+//     .optionLabel:before {
+//         width: 1rem;
+//         height: 1rem;
+//         margin-right: 1rem; 
+//     }
+
+//     input[type="radio"]:checked {
+//         background: greenyellow;
+//     }
+// }

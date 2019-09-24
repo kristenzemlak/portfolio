@@ -1,0 +1,37 @@
+header {
+    background-color: black;
+    color: white; 
+    text-transform: uppercase; 
+    padding: 2rem;
+    h1 {
+        font-family: $specialFont;
+        font-size: 6.7rem;
+        color: $primary; 
+        padding: 2rem 0; 
+        letter-spacing: 0.5rem; 
+    }
+    h2 {
+        font-size: 2.5rem; 
+        font-weight: 100;
+        padding-bottom: 2rem;
+    }
+}
+
+nav ul {
+    display: flex; 
+    justify-content: center; 
+    a {
+        padding: 1rem; 
+    }
+}
+
+.skillsContainer {
+    display: flex;
+    justify-content: center; 
+    padding-bottom: 4rem; 
+    .skill {
+        font-size: 2.3rem;
+        margin: 0;
+        padding: 1.2rem;
+    }
+}

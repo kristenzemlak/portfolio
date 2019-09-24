@@ -1,0 +1,102 @@
+// COLORS
+$dark: #202020;
+$primary: #FE1535;
+$secondary: rgb(254, 188, 89);
+$accent: rgb(89, 254, 158);
+
+// FONTS 
+$baseFont: 'Roboto', sans-serif;
+$specialFont: 'Monoton', cursive;
+
+// GENERAL STYLES
+
+html {
+    font-size: 120%;
+}
+
+body {
+    font-family: $baseFont;
+}
+
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+    width: 90%; 
+}
+
+ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+li {
+    display: block; 
+    padding: 0.2rem 0;
+}
+
+a {
+    text-decoration: none; 
+    color: $secondary; 
+    font-weight: 100;
+    letter-spacing: 0.1rem; 
+    &:hover, 
+    &:active, 
+    &:focus {
+        color: $accent;
+    }
+}
+
+img {
+    width: 100%;
+    display: block; 
+}
+
+// HEADLINES
+
+h1, h2, h3, h4, h5 {
+    letter-spacing: 0.1rem; 
+    margin: 0;
+    padding: 0;  
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h4, h5 {
+    text-align: left; 
+    margin-bottom: 1rem; 
+}
+
+h2 {
+    color: white; 
+    font-weight: 100;
+}
+
+h3 {
+    font-family: $specialFont; 
+    font-size: 3rem; 
+    color: $primary; 
+}
+
+h4 {
+    color: $primary; 
+    font-weight: 600;
+    font-size: 2rem; 
+}
+
+h5 {
+    color: $secondary; 
+    font-weight: 100; 
+    font-size: 1.6rem;
+    font-style: italic;
+}
+
+p {
+    line-height: 1.5rem; 
+    color: white; 
+    margin-bottom: 1rem; 
+    font-weight: 100;
+}
