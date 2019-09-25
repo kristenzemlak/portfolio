@@ -232,7 +232,7 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  background: #febc59;
+  background: #fce9bd;
 }
 
 .wrapper {
@@ -255,13 +255,13 @@ li {
 
 a {
   text-decoration: none;
-  color: #febc59;
+  color: #fce9bd;
   font-weight: 100;
   letter-spacing: 0.1rem;
 }
 
 a:hover, a:active, a:focus {
-  color: #FE1535;
+  color: #ff442b;
 }
 
 img {
@@ -293,17 +293,17 @@ h2 {
 h3 {
   font-family: "Monoton", cursive;
   font-size: 3rem;
-  color: #FE1535;
+  color: #ff442b;
 }
 
 h4 {
-  color: #FE1535;
+  color: #ff442b;
   font-weight: 600;
   font-size: 2rem;
 }
 
 h5 {
-  color: #FE1535;
+  color: #ff442b;
   font-size: 1.4rem;
   font-style: italic;
 }
@@ -325,7 +325,7 @@ header {
 header h1 {
   font-family: "Monoton", cursive;
   font-size: 6.7rem;
-  color: #FE1535;
+  color: #ff442b;
   padding-top: 4rem;
   letter-spacing: 0.5rem;
 }
@@ -344,6 +344,7 @@ nav ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 1rem;
 }
 
 nav ul a {
@@ -364,17 +365,6 @@ nav ul a {
   font-size: 2.3rem;
   margin: 0;
   padding: 1.2rem;
-}
-
-.hamburger,
-.exit-responsive {
-  display: none;
-  text-align: right;
-  color: #febc59;
-}
-
-.show.menu {
-  display: block;
 }
 
 .projects {
@@ -406,7 +396,9 @@ nav ul a {
 .liveButton,
 .submitButton {
   display: inline-block;
-  border: 4px solid #FE1535;
+  border: 4px solid #ff442b;
+  background: #ff442b;
+  color: white;
   text-transform: uppercase;
   text-align: center;
   font-weight: 600;
@@ -424,26 +416,15 @@ nav ul a {
 .submitButton:hover,
 .submitButton:focus,
 .submitButton:active {
-  background: #febc59;
-  border: 4px solid #febc59;
-  color: white;
-}
-
-.liveButton,
-.submitButton {
-  background: #FE1535;
-  color: white;
-}
-
-.githubButton {
-  color: #FE1535;
+  background: #ffbab1;
+  border: 4px solid black;
+  color: black;
 }
 
 .about {
   background: black;
-  padding: 4rem;
-  color: #FE1535;
-  border-bottom: 6px solid #FE1535;
+  padding: 4rem 0;
+  color: #ff442b;
 }
 
 .about h3 {
@@ -465,7 +446,7 @@ nav ul a {
 .about .fab:hover,
 .about .fab:focus,
 .about .fab:active {
-  color: #FE1535;
+  color: #ff442b;
 }
 
 .aboutContainer,
@@ -506,6 +487,7 @@ nav ul a {
 .useremail,
 .message {
   font-family: "Roboto", sans-serif;
+  font-weight: 100;
   color: black;
   padding: 1rem;
   margin-bottom: 2rem;
@@ -514,22 +496,15 @@ nav ul a {
 }
 
 footer {
-  background-color: black;
-  color: white;
-  border-top: 4px solid #febc59;
+  background-color: #fce9bd;
+  color: black;
   text-align: center;
-  font-size: 1rem;
-  margin: 0;
 }
 
-footer ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 1rem;
+footer p {
+  font-weight: 400;
+  font-size: 1rem;
+  padding: .5rem;
 }
 
 @media screen and (max-width: 550px) {
@@ -541,7 +516,7 @@ footer ul {
     padding: 0;
   }
   header h1 {
-    font-size: 3rem;
+    font-size: 2.8rem;
     letter-spacing: 0.2rem;
   }
   header h2 {

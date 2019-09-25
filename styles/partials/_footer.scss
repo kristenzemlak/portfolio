@@ -1,13 +1,11 @@
 footer {
-    background-color: black;
-    color: white; 
-    border-top: 4px solid $secondary; 
+    background-color: $secondary;
+    color: black; 
+    // border-top: 4px solid $primary; 
     text-align: center; 
-    font-size: 1rem; 
-    margin: 0; 
-    ul {
-        display: flex; 
-        justify-content: center; 
-        padding-bottom: 1rem; 
+    p {
+        font-weight: 400; 
+        font-size: 1rem;  
+        padding: .5rem;
     }
 }

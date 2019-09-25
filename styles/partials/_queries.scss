@@ -11,7 +11,7 @@
     header {
         padding: 0;
         h1 {
-            font-size: 3rem;
+            font-size: 2.8rem;
             letter-spacing: 0.2rem; 
         }
         h2 {
@@ -56,7 +56,6 @@
     }
 
     // ABOUT SECTION ////////////////////////////////
-
 
     .aboutContainer, 
     .contact { 
@@ -115,3 +114,8 @@
 		padding: 30px;
 	}
 }
+
+// h1 {
+//     font-size: calc(32px + (80 - 32) * (100vw - 320px) / (1440 - 320));
+// }
+// 32 = smallest font size, 80 = biggest, 1440 = max screen width, 320 = min screen width

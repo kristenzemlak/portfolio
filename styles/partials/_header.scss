@@ -21,6 +21,7 @@ header {
 nav ul {
     display: flex; 
     justify-content: center; 
+    padding-top: 1rem; 
     a {
         padding: 1rem; 
     }
@@ -37,13 +38,13 @@ nav ul {
     }
 }
 
-.hamburger,
-.exit-responsive {
-    display: none;
-    text-align: right; 
-    color: $secondary; 
-}
+// .hamburger,
+// .exit-responsive {
+//     display: none;
+//     text-align: right; 
+//     color: $secondary; 
+// }
 
-.show.menu {
-	display: block;
-}
+// .show.menu {
+// 	display: block;
+// }
