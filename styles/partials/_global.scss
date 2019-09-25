@@ -1,8 +1,7 @@
 // COLORS
-$dark: #202020;
 $primary: #FE1535;
 $secondary: rgb(254, 188, 89);
-$accent: rgb(89, 254, 158);
+$light: #F5F5F5;
 
 // FONTS 
 $baseFont: 'Roboto', sans-serif;
@@ -16,11 +15,13 @@ html {
 
 body {
     font-family: $baseFont;
+    background: $secondary; 
 }
 
 .wrapper {
-    max-width: 1170px;
+    max-width: 1300px;
     margin: 0 auto;
+    padding: 1rem 0; 
     width: 90%; 
 }
 
@@ -43,7 +44,7 @@ a {
     &:hover, 
     &:active, 
     &:focus {
-        color: $accent;
+        color: $primary;
     }
 }
 
@@ -88,15 +89,14 @@ h4 {
 }
 
 h5 {
-    color: $secondary; 
-    font-weight: 100; 
-    font-size: 1.6rem;
+    color: $primary; 
+    font-size: 1.4rem;
     font-style: italic;
 }
 
 p {
     line-height: 1.5rem; 
-    color: white; 
-    margin-bottom: 1rem; 
+    letter-spacing: .1rem;
+    padding: 1rem 0; 
     font-weight: 100;
 }

@@ -232,11 +232,13 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
+  background: #febc59;
 }
 
 .wrapper {
-  max-width: 1170px;
+  max-width: 1300px;
   margin: 0 auto;
+  padding: 1rem 0;
   width: 90%;
 }
 
@@ -259,7 +261,7 @@ a {
 }
 
 a:hover, a:active, a:focus {
-  color: #59fe9e;
+  color: #FE1535;
 }
 
 img {
@@ -301,16 +303,15 @@ h4 {
 }
 
 h5 {
-  color: #febc59;
-  font-weight: 100;
-  font-size: 1.6rem;
+  color: #FE1535;
+  font-size: 1.4rem;
   font-style: italic;
 }
 
 p {
   line-height: 1.5rem;
-  color: white;
-  margin-bottom: 1rem;
+  letter-spacing: .1rem;
+  padding: 1rem 0;
   font-weight: 100;
 }
 
@@ -325,7 +326,7 @@ header h1 {
   font-family: "Monoton", cursive;
   font-size: 6.7rem;
   color: #FE1535;
-  padding: 2rem 0;
+  padding-top: 4rem;
   letter-spacing: 0.5rem;
 }
 
@@ -333,6 +334,7 @@ header h2 {
   font-size: 2.5rem;
   font-weight: 100;
   padding-bottom: 2rem;
+  padding-top: 0.5rem;
 }
 
 nav ul {
@@ -364,6 +366,21 @@ nav ul a {
   padding: 1.2rem;
 }
 
+.hamburger,
+.exit-responsive {
+  display: none;
+  text-align: right;
+  color: #febc59;
+}
+
+.show.menu {
+  display: block;
+}
+
+.projects {
+  margin-bottom: 2rem;
+}
+
 .projects h3 {
   padding: 4rem;
 }
@@ -375,109 +392,134 @@ nav ul a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: black;
-  padding: 2rem;
+  background-color: white;
+  padding: 4rem;
   margin-bottom: 2rem;
 }
 
 .projectCard .projectInfo,
 .projectCard .projectImage {
   width: 50%;
-  padding: 2rem;
 }
 
-.projectCard .githubButton,
-.projectCard .liveButton {
+.githubButton,
+.liveButton,
+.submitButton {
+  display: inline-block;
+  border: 4px solid #FE1535;
   text-transform: uppercase;
   text-align: center;
   font-weight: 600;
   padding: .8rem 0;
   margin-top: 1rem;
-  width: 250px;
-  display: inline-block;
+  margin-right: 2rem;
+  width: 100%;
+  max-width: 350px;
 }
 
-.liveButton {
+.githubButton:hover, .githubButton:focus, .githubButton:active,
+.liveButton:hover,
+.liveButton:focus,
+.liveButton:active,
+.submitButton:hover,
+.submitButton:focus,
+.submitButton:active {
   background: #febc59;
-  color: black;
+  border: 4px solid #febc59;
+  color: white;
 }
 
-.liveButton:hover, .liveButton:focus, .liveButton:active {
-  background: #59fe9e;
-  color: black;
+.liveButton,
+.submitButton {
+  background: #FE1535;
+  color: white;
 }
 
 .githubButton {
-  background: black;
-  border: 4px solid #febc59;
-  color: #febc59;
-}
-
-.githubButton:hover, .githubButton:focus, .githubButton:active {
-  border: 4px solid #59fe9e;
-  color: #59fe9e;
+  color: #FE1535;
 }
 
 .about {
-  background: #FE1535;
+  background: black;
   padding: 4rem;
-  margin-bottom: 2rem;
-}
-
-.about h3, .about h4 {
-  color: white;
+  color: #FE1535;
+  border-bottom: 6px solid #FE1535;
 }
 
 .about h3 {
   padding-bottom: 4rem;
 }
 
-.socialContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.about p {
+  color: white;
 }
 
-.socialContainer .social {
-  font-size: 1.5rem;
-  margin-left: 0;
-  margin-right: 1rem;
+.about .fas,
+.about .fab {
+  font-size: 2rem;
+  width: calc(100% / 5);
+  padding-bottom: 1rem;
 }
 
-.aboutContainer {
+.about .fas:hover, .about .fas:focus, .about .fas:active,
+.about .fab:hover,
+.about .fab:focus,
+.about .fab:active {
+  color: #FE1535;
+}
+
+.aboutContainer,
+.contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
-.aboutContainer .bio {
+.bio,
+.contactForm {
   width: 70%;
-  padding-right: 5rem;
 }
 
-.aboutContainer .contact {
-  width: 30%;
+.profilePicture,
+.contactInfo {
+  width: 20%;
 }
 
-.aboutContainer .contact p {
-  line-height: 1.5rem;
-  margin-bottom: 1rem;
-  font-weight: 600;
-  letter-spacing: .08rem;
+.contactInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.username,
+.useremail,
+.message {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border: none;
+  width: 100%;
 }
 
 footer {
   background-color: black;
   color: white;
+  border-top: 4px solid #febc59;
   text-align: center;
-  font-size: 1.5rem;
-  line-height: 1.6rem;
-  padding: 1rem 0;
+  font-size: 1rem;
+  margin: 0;
 }
 
 footer ul {
@@ -488,4 +530,122 @@ footer ul {
       -ms-flex-pack: center;
           justify-content: center;
   padding-bottom: 1rem;
+}
+
+@media screen and (max-width: 550px) {
+  .wrapper {
+    padding: 0rem;
+    width: 90%;
+  }
+  header {
+    padding: 0;
+  }
+  header h1 {
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+  }
+  header h2 {
+    font-size: 1.7rem;
+  }
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: right;
+  }
+  .skillsContainer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .skillsContainer .skill {
+    font-size: 1.5rem;
+    padding-bottom: 0;
+  }
+  .projects h3,
+  .about h3 {
+    font-size: 2rem;
+    padding: 4rem 0;
+  }
+  .projectCard {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem;
+    margin-bottom: 2rem;
+  }
+  .projectCard .projectInfo,
+  .projectCard .projectImage {
+    width: 100%;
+  }
+  .productImage {
+    margin-top: 1rem;
+  }
+  .aboutContainer,
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 2rem;
+  }
+  .bio,
+  .contactForm,
+  .profilePicture,
+  .contactInfo {
+    width: 100%;
+    padding: 1rem;
+  }
+  .contactInfo {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .socialContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .socialContainer .fab, .socialContainer .fas {
+    padding: 0.7rem;
+    font-size: 1rem;
+  }
+  .hamburger,
+  .exit-responsive {
+    display: block;
+    font-size: 25px;
+  }
+  .menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.99);
+    color: white;
+  }
+  .menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menu ul a {
+    font-size: 50px;
+    text-align: center;
+    width: 100%;
+    padding: 30px;
+  }
 }

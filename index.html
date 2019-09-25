@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Portfolio | Kristen Zemlak</title>
+    <title>Kristen Zemlak</title>
 
     <!-- style sheet  -->
     <link rel="stylesheet" href="./styles/styles.css">
@@ -23,9 +23,9 @@
     <header >
         <div class="wrapper">
             <nav>
+                <p class="hamburger"><i class="fas fa-bars"></i></p>
                 <ul>
                     <li><a href="#projects">Portfolio</a></li>
-                    <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <!-- <li><a href=""></a>Blog</li> -->
                 </ul>
@@ -33,16 +33,16 @@
             <h1>Kristen Zemlak</h1>
             <h2>Front-End Web Developer</h2>
             <ul class="skillsContainer">
-                    <li class="skill"><i class="devicon-javascript-plain"></i></li>
-                    <li class="skill"><i class="devicon-html5-plain-wordmark"></i></li>
-                    <li class="skill"><i class="devicon-css3-plain-wordmark"></i></li>
-                    <li class="skill"><i class="devicon-sass-original"></i></li>
-                    <li class="skill"><i class="devicon-react-original-wordmark"></i></li>
-                    <li class="skill"><i class="devicon-jquery-plain-wordmark"></i></li>
-                    <li class="skill"><i class="devicon-github-plain-wordmark"></i></li>
-                    <li class="skill"><i class="devicon-visualstudio-plain"></i></li>
-                </ul>
-        </div>
+                <li class="skill"><i class="devicon-javascript-plain"></i></li>
+                <li class="skill"><i class="devicon-html5-plain-wordmark"></i></li>
+                <li class="skill"><i class="devicon-css3-plain-wordmark"></i></li>
+                <li class="skill"><i class="devicon-sass-original"></i></li>
+                <li class="skill"><i class="devicon-react-original-wordmark"></i></li>
+                <li class="skill"><i class="devicon-jquery-plain-wordmark"></i></li>
+                <li class="skill"><i class="devicon-github-plain-wordmark"></i></li>
+                <li class="skill"><i class="devicon-visualstudio-plain"></i></li>
+            </ul>
+        </div><!-- /.wrapper -->
     </header>
     <main>
         <section class="projects wrapper" id="projects">
@@ -50,7 +50,7 @@
             <ul class="projectList">
                 <li class="projectCard">
                     <div class="projectInfo">
-                        <h4>E-Commerce Search & Save "Favourites"</h4>
+                        <h4>E-Commerce Cart</h4>
                         <h5>React</h5>
                         <p>API/Ecommerce app where users can add items to “favourites” list in an ecommerce environment.</p>
                         <div class="projectButtonContainer">
@@ -58,7 +58,9 @@
                             <a class="githubButton" href="https://github.com/Mob-Eit/makeThisUp">GitHub</a>
                         </div>
                     </div>
-                    <img class="projectImage" src="./assets/projectMakeApp.png" alt="">
+                    <div class="projectImage">
+                        <img src="./assets/projectMakeApp.png" alt="">
+                    </div>
                 </li>
                 <li class="projectCard">
                     <div class="projectInfo">
@@ -70,49 +72,110 @@
                             <a class="githubButton href="https://github.com/kristenzemlak/kristenZemlakProjectThree">GitHub</a>
                         </div>
                     </div>
-                    <img class="projectImage" src="./assets/projectQuiz.png" alt="">
+                    <div class="projectImage">
+                        <img src="./assets/projectQuiz.png" alt="">
+                    </div>
                 </li>
                 <li class="projectCard">
+                        <div class="projectInfo">
+                            <h4>Salad Club List</h4>
+                            <h5>Javascript & Firebase</h5>
+                            <p>Multiple-choice quiz that displays content based on user selection.</p>
+                            <div class="projectButtonContainer">
+                                <a class="liveButton" href="https://my-potluck-pal.firebaseapp.com/">Live</a>
+                                <a class="githubButton href="https://github.com/kristenzemlak/my-potluck-pal">GitHub</a>
+                            </div>
+                        </div>
+                        <div class="projectImage">
+                            <img src="./assets/projectPotluck.png" alt="">
+                        </div>
+                    </li>
+                <li class="projectCard">
                     <div class="projectInfo">
-                        <h4>PSD to Web Conversion</h4>
+                        <h4>PSD Conversion</h4>
                         <h5>HTML5 & CSS</h5>
                         <p>PSD converted into responsive multi-page websites.</p>
                         <div class="projectButtonContainer">
-                            <a class="liveButton" href="#">Live</a>
+                            <a class="liveButton" href="">Live</a>
                             <a class="githubButton href="https://github.com/kristenzemlak/kristen-zemlak-project-one">GitHub</a>
                         </div>
                     </div>
-                    <img class="projectImage" src="./assets/projectGalassHandbags.png" alt="">
+                    <div class="projectImage">
+                        <img src="./assets/projectGalassHandbags.png" alt="">
+                    </div>
                 </li><!-- /.projectCard -->
             </ul><!-- /.projectList -->
         </section><!-- /.projects -->
-        <section class="about wrapper" id="about">
-            <h3>About</h3>
-            <div class="aboutContainer">
-                <div class="bio">
-                    <h4>Bio</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo veritatis officia corporis maiores magnam ducimus sunt perspiciatis fugit deserunt vel.</p>
-                </div><!-- /.bio -->
-                <div class="contact" id="contact">
-                    <h4>Contact</h4>
-                    <p><a href="mailto:kristen.zemlak@gmail.com"></a>kristen.zemlak@gmail.com </class="email"></p>
-                    <ul class="socialContainer">
-                        <li class="social"><a href="https://www.linkedin.com/in/kristenzemlak"><i class="fab fa-linkedin-in"></i></i></a></li>
-                        <li class="social"><a href="https://twitter.com/kristenzemlak"><i class="fab fa-twitter"></i></a></li>
-                        <li class="social"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li class="social"><a href="https://www.instagram.com/kristenzemlak"><i class="fab fa-instagram"></i></a></a></li>
-                        <li class="social"><a href="https://github.com/kristenzemlak"><i class="fab fa-github"></i></a></li>
-                    </ul>
-                </div><!-- /.contact-->
-            </div><!-- /.aboutContainer-->
-            <!-- <div class="twitterWidget">
-                <a class="twitter-timeline" data-tweet-limit="1" href="https://twitter.com/KristenZemlak?ref_src=twsrc%5Etfw">Latest on Twitter by @KristenZemlak</a> 
-                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div> -->
+
+        <section class="about" id="about">
+            <div class="wrapper">
+                <h3>About</h3>
+                <div class="aboutContainer">
+                    <div class="profilePicture">
+                        <img src="./assets/profilePicture.jpg" alt="Profile picture of Kristen Zemlak">
+                    </div><!-- /.profilePicture-->
+                    <div class="bio">
+                        <h4>Bio</h4>
+                        <p>I’m a self-motivated web developer with a background in digital and social media marketing. Throughout my career, I've managed hundreds of projects and in an agency environment, independtly as a freelancer and in-house.</p>
+                    </div><!-- /.bio-->
+                </div><!-- /.aboutContainer-->
+    
+                <section class="contact" id="contact">
+                    <div class="contactInfo" >
+                        <h4>Contact</h4>
+                        
+                        <ul class="socialContainer">
+                            <li>
+                                <a href="mailto:kristen.zemlak@gmail.com"><i class="fas fa-envelope"></i></a>
+                            </li>
+                            <li class="social"><a href="https://www.linkedin.com/in/kristenzemlak"><i class="fab fa-linkedin-in"></i></i></a></li>
+                            <li class="social"><a href="https://twitter.com/kristenzemlak"><i class="fab fa-twitter"></i></a></li>
+                            <li class="social"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="social"><a href="https://www.instagram.com/kristenzemlak"><i class="fab fa-instagram"></i></a></a></li>
+                            <li class="social"><a href="https://github.com/kristenzemlak"><i class="fab fa-github"></i></a></li>
+                        </ul>
+                    </div><!-- /.contactInfo -->
+                    <form action="#" class="contactForm">
+                            <label class="visuallyHidden" for="username">Name</label>
+                            <input type="text" name="username" class="username" id="username" placeholder="Name">
+        
+                            <label class="visuallyHidden" for="email">Email</label>
+                            <input type="text" name="useremail" class="useremail" id="useremail" placeholder="Email">
+    
+                            <label class="fullWidth visuallyHidden" for="message">Message"</label>
+                            <textarea name="message" class="message" id="message" placeholder="Message" cols="30" rows="10"></textarea>
+        
+                            <label class="visuallyHidden" for="submit">Submit</label>
+                            <input type="submit" name="submit" class="submitButton" id="submit" value="Submit">
+                    </form> <!-- /.form -->
+                </section><!-- /.contact -->
+            </div>
+
         </section><!-- about -->
     </main>
     <footer>
         <p>KZ | 2019</p>
     </footer>
+
+    <!-- Load in jQuery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		// write a document ready
+		// write a function that listens to a click on the hamburger menu
+		// toggle class show on the menu
+		// write a function that listens to a click on the exit icon
+		// toggle class show on the menu
+
+		$(document).ready(function(){
+            $('.hamburger').on('click', function(){
+                $('.menu').toggleClass('show'); // toggle class to show menu
+        });
+        
+        $('.exit-responsive').on('click', function(){
+            $('.menu').toggleClass('show');// toggle class show on the menu
+            });
+		});
+    </script>
+    
 </body>
 </html>

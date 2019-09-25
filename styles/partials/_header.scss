@@ -7,13 +7,14 @@ header {
         font-family: $specialFont;
         font-size: 6.7rem;
         color: $primary; 
-        padding: 2rem 0; 
+        padding-top: 4rem; 
         letter-spacing: 0.5rem; 
     }
     h2 {
         font-size: 2.5rem; 
         font-weight: 100;
         padding-bottom: 2rem;
+        padding-top: 0.5rem; 
     }
 }
 
@@ -34,4 +35,15 @@ nav ul {
         margin: 0;
         padding: 1.2rem;
     }
+}
+
+.hamburger,
+.exit-responsive {
+    display: none;
+    text-align: right; 
+    color: $secondary; 
+}
+
+.show.menu {
+	display: block;
 }
