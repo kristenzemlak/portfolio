@@ -232,7 +232,7 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  background: #fce9bd;
+  background: #fafafa;
 }
 
 .wrapper {
@@ -255,13 +255,13 @@ li {
 
 a {
   text-decoration: none;
-  color: #fce9bd;
+  color: #fafafa;
   font-weight: 100;
   letter-spacing: 0.1rem;
 }
 
 a:hover, a:active, a:focus {
-  color: #ff442b;
+  color: #FA5448;
 }
 
 img {
@@ -293,19 +293,19 @@ h2 {
 h3 {
   font-family: "Monoton", cursive;
   font-size: 3rem;
-  color: #ff442b;
+  color: #FA5448;
 }
 
 h4 {
-  color: #ff442b;
+  color: black;
   font-weight: 600;
   font-size: 2rem;
 }
 
 h5 {
-  color: #ff442b;
+  color: black;
   font-size: 1.4rem;
-  font-style: italic;
+  font-weight: 100;
 }
 
 p {
@@ -325,7 +325,7 @@ header {
 header h1 {
   font-family: "Monoton", cursive;
   font-size: 6.7rem;
-  color: #ff442b;
+  color: #FA5448;
   padding-top: 4rem;
   letter-spacing: 0.5rem;
 }
@@ -396,8 +396,8 @@ nav ul a {
 .liveButton,
 .submitButton {
   display: inline-block;
-  border: 4px solid #ff442b;
-  background: #ff442b;
+  border: 4px solid transparent;
+  background: #FA5448;
   color: white;
   text-transform: uppercase;
   text-align: center;
@@ -405,7 +405,7 @@ nav ul a {
   padding: .8rem 0;
   margin-top: 1rem;
   margin-right: 2rem;
-  width: 100%;
+  width: 50%;
   max-width: 350px;
 }
 
@@ -424,11 +424,15 @@ nav ul a {
 .about {
   background: black;
   padding: 4rem 0;
-  color: #ff442b;
+  color: #FA5448;
 }
 
 .about h3 {
   padding-bottom: 4rem;
+}
+
+.about h4 {
+  color: #FA5448;
 }
 
 .about p {
@@ -446,7 +450,7 @@ nav ul a {
 .about .fab:hover,
 .about .fab:focus,
 .about .fab:active {
-  color: #ff442b;
+  color: #FA5448;
 }
 
 .aboutContainer,
@@ -496,7 +500,7 @@ nav ul a {
 }
 
 footer {
-  background-color: #fce9bd;
+  background-color: #fafafa;
   color: black;
   text-align: center;
 }
@@ -507,7 +511,13 @@ footer p {
   padding: .5rem;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 835px) {
+  header h1 {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
   .wrapper {
     padding: 0rem;
     width: 90%;
@@ -557,8 +567,10 @@ footer p {
   .projectCard .projectImage {
     width: 100%;
   }
-  .productImage {
-    margin-top: 1rem;
+  .githubButton,
+  .liveButton,
+  .submitButton {
+    width: 100%;
   }
   .aboutContainer,
   .contact {
@@ -592,35 +604,5 @@ footer p {
   .socialContainer .fab, .socialContainer .fas {
     padding: 0.7rem;
     font-size: 1rem;
-  }
-  .hamburger,
-  .exit-responsive {
-    display: block;
-    font-size: 25px;
-  }
-  .menu {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.99);
-    color: white;
-  }
-  .menu ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .menu ul a {
-    font-size: 50px;
-    text-align: center;
-    width: 100%;
-    padding: 30px;
   }
 }

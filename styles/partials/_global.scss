@@ -1,6 +1,6 @@
 // COLORS
-$primary:  rgb(255, 68, 43); 
-$secondary:rgb(252, 233, 189); 
+$primary:  #FA5448;
+$secondary:#fafafa; 
 $light: white; 
 $hover: rgb(255, 186, 177); 
 
@@ -84,15 +84,15 @@ h3 {
 }
 
 h4 {
-    color: $primary; 
+    color: black; 
     font-weight: 600;
     font-size: 2rem; 
 }
 
 h5 {
-    color: $primary; 
+    color: black; 
     font-size: 1.4rem;
-    font-style: italic;
+    font-weight: 100; 
 }
 
 p {

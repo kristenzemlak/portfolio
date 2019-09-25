@@ -1,4 +1,17 @@
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 835px) {
+    header h1 {
+        font-size: 5rem;
+    }
+}
+
+// @media screen and (max-width: 700px) {
+//     header h1 {
+//         font-size: 4rem;
+//     }
+
+// }
+
+@media screen and (max-width: 700px) {
 
     // GENERAL ////////////////////////////////
     .wrapper {
@@ -51,8 +64,10 @@
         }
     }
 
-    .productImage {
-        margin-top: 1rem;  
+    .githubButton,
+    .liveButton, 
+    .submitButton {
+        width: 100%; 
     }
 
     // ABOUT SECTION ////////////////////////////////
@@ -83,37 +98,39 @@
             font-size: 1rem; 
         }
     }
-
-    // HAMBURGER //////////////////////////
-    .hamburger,
-	.exit-responsive {
-		display: block;
-		font-size: 25px;
-	}
-
-	.menu {
-		display: none;
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background: rgba(0,0,0,0.99);
-		color: white;
-	}
-
-	.menu ul {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.menu ul a {
-		font-size: 50px;
-		text-align: center;
-		width: 100%;
-		padding: 30px;
-	}
 }
+    // HAMBURGER //////////////////////////
+//     .hamburger,
+// 	.exit-responsive {
+// 		display: block;
+// 		font-size: 25px;
+// 	}
+
+// 	.menu {
+// 		display: none;
+// 		position: absolute;
+// 		top: 0;
+// 		left: 0;
+// 		right: 0;
+// 		bottom: 0;
+// 		background: rgba(0,0,0,0.99);
+// 		color: white;
+// 	}
+
+// 	.menu ul {
+// 		display: flex;
+// 		flex-direction: column;
+// 	}
+
+// 	.menu ul a {
+// 		font-size: 50px;
+// 		text-align: center;
+// 		width: 100%;
+// 		padding: 30px;
+// 	}
+// }
+
+
 
 // h1 {
 //     font-size: calc(32px + (80 - 32) * (100vw - 320px) / (1440 - 320));

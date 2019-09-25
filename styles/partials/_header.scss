@@ -9,6 +9,11 @@ header {
         color: $primary; 
         padding-top: 4rem; 
         letter-spacing: 0.5rem; 
+
+        // h1 {
+        //     font-size: calc(32px + (80 - 32) * (100vw - 320px) / (1440 - 320));
+        // }
+        // 32 = smallest font size, 80 = biggest, 1440 = max screen width, 320 = min screen width
     }
     h2 {
         font-size: 2.5rem; 
