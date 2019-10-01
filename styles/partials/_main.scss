@@ -9,8 +9,8 @@
 
 .projectCard {
     display: flex;
-    justify-content: space-between; 
-    background-color: white;
+    justify-content: space-between;
+    border: 2px solid black; 
     padding: 4rem;
     margin-bottom: 2rem;
     .projectInfo,
@@ -23,9 +23,9 @@
 .liveButton, 
 .submitButton {
     display: inline-block; 
-    border: 4px solid transparent;
-    background: $primary;
-    color: white; 
+    border: 4px solid $secondary;
+    background: $secondary;
+    color: black; 
     text-transform: uppercase;
     text-align: center; 
     font-weight: 600; 
@@ -34,13 +34,11 @@
     margin-right: 2rem; 
     width: 50%; 
     max-width: 350px;
-    // transition: border 0.2s linear; 
-    
     &:hover, 
     &:focus,
     &:active {
         background: $hover;
-        border: 4px solid black; 
+        border: 4px solid secondary; 
         color: black; 
     }
 }
@@ -73,7 +71,7 @@
         &:hover, 
         &:focus, 
         &:active {
-            color: $primary;
+            color: $hover;
         }
     }
 }

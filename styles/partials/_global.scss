@@ -1,8 +1,8 @@
 // COLORS
 $primary:  #FA5448;
-$secondary:#fafafa; 
+$secondary:#A3EB6A; 
 $light: white; 
-$hover: rgb(255, 186, 177); 
+$hover: rgb(207, 233, 185); 
 
 // FONTS 
 $baseFont: 'Roboto', sans-serif;
@@ -16,7 +16,6 @@ html {
 
 body {
     font-family: $baseFont;
-    background: $secondary; 
 }
 
 .wrapper {
@@ -45,7 +44,7 @@ a {
     &:hover, 
     &:active, 
     &:focus {
-        color: $primary;
+        color: $hover;
     }
 }
 
