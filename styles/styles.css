@@ -226,10 +226,16 @@ img {
   margin: 0 auto;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: 'Open Sans', Arial, sans-serif;
   color: #0b0c0c;
   line-height: 1.5;
+  letter-spacing: .1rem;
   font-weight: 400;
   font-size: 160%;
 }
@@ -239,50 +245,18 @@ body {
   margin: 0 auto;
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  display: block;
-}
-
-a {
-  text-decoration: none;
-  color: #ffffff;
-  letter-spacing: 0.1rem;
-  border-bottom: 2px solid #ffffff;
-  margin-right: 2rem;
-  padding-bottom: 0.3rem;
-}
-
-a:hover, a:active, a:focus {
-  color: #003078;
-  border-bottom: 2px solid #003078;
-}
-
-img {
-  width: 100%;
-  display: block;
+h1, h2, h3, h4 {
+  font-weight: 600;
 }
 
 h1 {
   color: #ffffff;
-  font-size: 6.7rem;
+  font-size: 7rem;
   padding-top: 4rem;
 }
 
 h2 {
-  font-size: 2.5rem;
-  font-weight: 100;
-  padding-bottom: 2rem;
-  padding-top: 0.5rem;
-}
-
-h4, h5 {
-  margin-bottom: 1rem;
+  font-size: 3rem;
 }
 
 h3 {
@@ -292,14 +266,37 @@ h3 {
 
 h4 {
   font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 h5 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 
-p {
-  letter-spacing: .1rem;
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  display: block;
+}
+
+ul a {
+  text-decoration: none;
+  color: #ffffff;
+  border: 2px solid transparent;
+  border-bottom: 2px solid #ffffff;
+  margin-right: 2rem;
+  padding: 0.3rem;
+}
+
+ul a:hover, ul a:active, ul a:focus {
+  background: #003078;
+  border: 2px dashed #0b0c0c;
+  color: #ffffff;
 }
 
 header {
@@ -321,9 +318,8 @@ nav ul {
 }
 
 .skillsContainer .skill {
-  font-size: 2.3rem;
-  margin: 0;
-  padding-right: 1.2rem;
+  font-size: 3rem;
+  padding: 2rem 2rem 2rem 0;
 }
 
 .projects {
@@ -370,7 +366,7 @@ nav ul {
 .submitButton:focus,
 .submitButton:active {
   background: #003078;
-  border: 2px solid #003078;
+  border: 2px dashed #0b0c0c;
   color: #ffffff;
 }
 
@@ -379,18 +375,21 @@ nav ul {
   padding-bottom: 4rem;
 }
 
+.about h4 {
+  margin-bottom: 1.5rem;
+}
+
+.about a {
+  background: #1d70b8;
+  border-bottom: none;
+}
+
 .about .fas,
 .about .fab {
   font-size: 2rem;
-  padding-bottom: 1rem;
-  color: #1d70b8;
-}
-
-.about .fas:hover, .about .fas:focus, .about .fas:active,
-.about .fab:hover,
-.about .fab:focus,
-.about .fab:active {
-  color: #003078;
+  margin-bottom: 2.2rem;
+  text-align: center;
+  width: 40px;
 }
 
 .aboutContainer,
@@ -401,7 +400,6 @@ nav ul {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 2rem;
 }
 
 .bio,

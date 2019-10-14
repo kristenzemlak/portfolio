@@ -31,7 +31,7 @@
     &:focus,
     &:active {
         background: $linkHoverColour;
-        border: 2px solid $linkHoverColour; 
+        border: 2px dashed $textColour; 
         color: $lightColour; 
     }
 }
@@ -41,17 +41,19 @@
 .about {
     background: $lightBackground; 
     padding-bottom: 4rem; 
+    h4 {
+        margin-bottom: 1.5rem; 
+    }
+    a {
+        background: $linkColour;
+        border-bottom: none; 
+    }
     .fas, 
     .fab {
         font-size: 2rem; 
-        // width: calc(100% / 5);
-        padding-bottom: 1rem;
-        color: $linkColour;
-        &:hover, 
-        &:focus, 
-        &:active {
-            color: $linkHoverColour;
-        }
+        margin-bottom: 2.2rem; 
+        text-align: center; 
+        width: 40px;
     }
 }
 
@@ -59,7 +61,6 @@
 .contact {
     display: flex; 
     justify-content: space-between; 
-    margin-bottom: 2rem; 
 }
 
 .bio, 
