@@ -226,19 +226,17 @@ img {
   margin: 0 auto;
 }
 
-html {
-  font-size: 120%;
-}
-
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #0b0c0c;
+  line-height: 1.5;
+  font-weight: 400;
+  font-size: 160%;
 }
 
 .wrapper {
   max-width: 1300px;
   margin: 0 auto;
-  padding: 1rem 0;
-  width: 90%;
 }
 
 ul {
@@ -249,18 +247,20 @@ ul {
 
 li {
   display: block;
-  padding: 0.2rem 0;
 }
 
 a {
   text-decoration: none;
-  color: #A3EB6A;
-  font-weight: 100;
+  color: #ffffff;
   letter-spacing: 0.1rem;
+  border-bottom: 2px solid #ffffff;
+  margin-right: 2rem;
+  padding-bottom: 0.3rem;
 }
 
 a:hover, a:active, a:focus {
-  color: #cfe9b9;
+  color: #003078;
+  border-bottom: 2px solid #003078;
 }
 
 img {
@@ -268,110 +268,66 @@ img {
   display: block;
 }
 
-h1, h2, h3, h4, h5 {
-  letter-spacing: 0.1rem;
-  margin: 0;
-  padding: 0;
-}
-
-h1, h2, h3 {
-  text-transform: uppercase;
-  text-align: center;
-}
-
-h4, h5 {
-  text-align: left;
-  margin-bottom: 1rem;
+h1 {
+  color: #ffffff;
+  font-size: 6.7rem;
+  padding-top: 4rem;
 }
 
 h2 {
-  color: white;
-  font-weight: 100;
-}
-
-h3 {
-  font-family: "Monoton", cursive;
-  font-size: 3rem;
-  color: #FA5448;
-}
-
-h4 {
-  color: black;
-  font-weight: 600;
-  font-size: 2rem;
-}
-
-h5 {
-  color: black;
-  font-size: 1.4rem;
-  font-weight: 100;
-}
-
-p {
-  line-height: 1.5rem;
-  letter-spacing: .1rem;
-  padding: 1rem 0;
-  font-weight: 100;
-}
-
-header {
-  background-color: black;
-  color: white;
-  text-transform: uppercase;
-  padding: 2rem;
-}
-
-header h1 {
-  font-family: "Monoton", cursive;
-  font-size: 6.7rem;
-  color: #FA5448;
-  padding-top: 4rem;
-  letter-spacing: 0.5rem;
-}
-
-header h2 {
   font-size: 2.5rem;
   font-weight: 100;
   padding-bottom: 2rem;
   padding-top: 0.5rem;
 }
 
+h4, h5 {
+  margin-bottom: 1rem;
+}
+
+h3 {
+  font-size: 3rem;
+  padding: 4rem 0;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+p {
+  letter-spacing: .1rem;
+}
+
+header {
+  background-color: #1d70b8;
+  padding: 4rem;
+  color: #ffffff;
+}
+
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-top: 1rem;
-}
-
-nav ul a {
-  padding: 1rem;
 }
 
 .skillsContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-bottom: 4rem;
 }
 
 .skillsContainer .skill {
   font-size: 2.3rem;
   margin: 0;
-  padding: 1.2rem;
+  padding-right: 1.2rem;
 }
 
 .projects {
   margin-bottom: 2rem;
-}
-
-.projects h3 {
-  padding: 4rem;
 }
 
 .projectCard {
@@ -381,7 +337,7 @@ nav ul a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 2px solid black;
+  border: 2px solid #b1b4b6;
   padding: 4rem;
   margin-bottom: 2rem;
 }
@@ -395,15 +351,13 @@ nav ul a {
 .liveButton,
 .submitButton {
   display: inline-block;
-  border: 4px solid #A3EB6A;
-  background: #A3EB6A;
-  color: black;
+  border: 2px solid #1d70b8;
+  background: #1d70b8;
+  color: #ffffff;
   text-transform: uppercase;
   text-align: center;
-  font-weight: 600;
-  padding: .8rem 0;
+  padding: .5rem 0;
   margin-top: 1rem;
-  margin-right: 2rem;
   width: 50%;
   max-width: 350px;
 }
@@ -415,41 +369,28 @@ nav ul a {
 .submitButton:hover,
 .submitButton:focus,
 .submitButton:active {
-  background: #cfe9b9;
-  border: 4px solid secondary;
-  color: black;
+  background: #003078;
+  border: 2px solid #003078;
+  color: #ffffff;
 }
 
 .about {
-  background: black;
-  padding: 4rem 0;
-  color: #FA5448;
-}
-
-.about h3 {
+  background: #f3f2f1;
   padding-bottom: 4rem;
-}
-
-.about h4 {
-  color: #FA5448;
-}
-
-.about p {
-  color: white;
 }
 
 .about .fas,
 .about .fab {
   font-size: 2rem;
-  width: calc(100% / 5);
   padding-bottom: 1rem;
+  color: #1d70b8;
 }
 
 .about .fas:hover, .about .fas:focus, .about .fas:active,
 .about .fab:hover,
 .about .fab:focus,
 .about .fab:active {
-  color: #cfe9b9;
+  color: #003078;
 }
 
 .aboutContainer,
@@ -489,24 +430,20 @@ nav ul a {
 .username,
 .useremail,
 .message {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  color: black;
-  padding: 1rem;
-  margin-bottom: 2rem;
-  border: none;
+  color: #0b0c0c;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 2px solid #0b0c0c;
   width: 100%;
 }
 
 footer {
-  background-color: #FA5448;
-  color: black;
+  background-color: #0b0c0c;
+  color: #ffffff;
   text-align: center;
 }
 
 footer p {
-  font-weight: 600;
-  font-size: 1rem;
   padding: .5rem;
 }
 

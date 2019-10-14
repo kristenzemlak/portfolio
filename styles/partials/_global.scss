@@ -1,28 +1,14 @@
-// COLORS
-$primary:  #FA5448;
-$secondary:#A3EB6A; 
-$light: white; 
-$hover: rgb(207, 233, 185); 
-
-// FONTS 
-$baseFont: 'Roboto', sans-serif;
-$specialFont: 'Monoton', cursive;
-
-// GENERAL STYLES
-
-html {
-    font-size: 120%;
-}
-
 body {
-    font-family: $baseFont;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: $textColour;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 160%;
 }
 
 .wrapper {
     max-width: 1300px;
     margin: 0 auto;
-    padding: 1rem 0; 
-    width: 90%; 
 }
 
 ul {
@@ -33,18 +19,20 @@ ul {
 
 li {
     display: block; 
-    padding: 0.2rem 0;
 }
 
 a {
     text-decoration: none; 
-    color: $secondary; 
-    font-weight: 100;
-    letter-spacing: 0.1rem; 
+    color: $lightColour;
+    letter-spacing: 0.1rem;
+    border-bottom: 2px solid $lightColour; 
+    margin-right: 2rem;
+    padding-bottom: 0.3rem;
     &:hover, 
     &:active, 
     &:focus {
-        color: $hover;
+        color: $linkHoverColour;
+        border-bottom: 2px solid $linkHoverColour; 
     }
 }
 
@@ -55,48 +43,41 @@ img {
 
 // HEADLINES
 
-h1, h2, h3, h4, h5 {
-    letter-spacing: 0.1rem; 
-    margin: 0;
-    padding: 0;  
-}
+h1 {
+    color: $lightColour;
+    font-size: 6.7rem;
+    padding-top: 4rem; 
 
-h1, h2, h3 {
-    text-transform: uppercase;
-    text-align: center;
-}
-
-h4, h5 {
-    text-align: left; 
-    margin-bottom: 1rem; 
+    // h1 {
+    //     font-size: calc(32px + (80 - 32) * (100vw - 320px) / (1440 - 320));
+    // }
+    // 32 = smallest font size, 80 = biggest, 1440 = max screen width, 320 = min screen width
 }
 
 h2 {
-    color: white; 
+    font-size: 2.5rem; 
     font-weight: 100;
+    padding-bottom: 2rem;
+    padding-top: 0.5rem; 
+}
+
+h4, h5 {
+    margin-bottom: 1rem; 
 }
 
 h3 {
-    font-family: $specialFont; 
     font-size: 3rem; 
-    color: $primary; 
+    padding: 4rem 0;
 }
 
 h4 {
-    color: black; 
-    font-weight: 600;
     font-size: 2rem; 
 }
 
 h5 {
-    color: black; 
-    font-size: 1.4rem;
-    font-weight: 100; 
+    font-size: 2rem;
 }
 
 p {
-    line-height: 1.5rem; 
     letter-spacing: .1rem;
-    padding: 1rem 0; 
-    font-weight: 100;
 }

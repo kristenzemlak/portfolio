@@ -1,16 +1,11 @@
-// PORTFOLIO SECTION ////////////////////////////////
-
 .projects {
-    margin-bottom: 2rem;
-    h3 {
-        padding: 4rem;
-    }    
+    margin-bottom: 2rem; 
 }
 
 .projectCard {
     display: flex;
     justify-content: space-between;
-    border: 2px solid black; 
+    border: 2px solid $borderColour; 
     padding: 4rem;
     margin-bottom: 2rem;
     .projectInfo,
@@ -23,55 +18,39 @@
 .liveButton, 
 .submitButton {
     display: inline-block; 
-    border: 4px solid $secondary;
-    background: $secondary;
-    color: black; 
+    border: 2px solid $linkColour;
+    background: $linkColour;
+    color: $lightColour; 
     text-transform: uppercase;
-    text-align: center; 
-    font-weight: 600; 
-    padding: .8rem 0; 
+    text-align: center;  
+    padding: .5rem 0; 
     margin-top: 1rem; 
-    margin-right: 2rem; 
     width: 50%; 
     max-width: 350px;
     &:hover, 
     &:focus,
     &:active {
-        background: $hover;
-        border: 4px solid secondary; 
-        color: black; 
+        background: $linkHoverColour;
+        border: 2px solid $linkHoverColour; 
+        color: $lightColour; 
     }
 }
 
 // ABOUT SECTION ////////////////////////////////
 
 .about {
-    background: black; 
-    padding: 4rem 0; 
-    color: $primary;
-
-    h3 {
-        padding-bottom: 4rem;
-        
-    }
-
-    h4 {
-        color: $primary; 
-    }
-
-    p {
-        color: white; 
-    }
-
+    background: $lightBackground; 
+    padding-bottom: 4rem; 
     .fas, 
     .fab {
         font-size: 2rem; 
-        width: calc(100% / 5);
+        // width: calc(100% / 5);
         padding-bottom: 1rem;
+        color: $linkColour;
         &:hover, 
         &:focus, 
         &:active {
-            color: $hover;
+            color: $linkHoverColour;
         }
     }
 }
@@ -101,12 +80,10 @@
 
 .username, 
 .useremail, 
-.message  { 
-    font-family: $baseFont; 
-    font-weight: 100; 
-    color: black; 
-    padding: 1rem;
-    margin-bottom: 2rem; 
-    border: none; 
+.message { 
+    color: $textColour; 
+    padding: 0.5rem;
+    margin-bottom: 1rem; 
+    border: 2px solid $inputBorderColour; 
     width: 100%;
 }

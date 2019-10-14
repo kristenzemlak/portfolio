@@ -1,10 +1,8 @@
 footer {
-    background-color: $primary;
-    color: black;  
+    background-color: $textColour;
+    color: $lightColour;
     text-align: center; 
     p {
-        font-weight: 600; 
-        font-size: 1rem;  
         padding: .5rem;
     }
 }
